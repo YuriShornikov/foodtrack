@@ -1,0 +1,322 @@
+/* mobil */
+@media (max-width : 500px) and (orientation: portrait) {
+    .catering {
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        background-color: #FFFFFF;
+        border-radius: 0 0 40px 40px;
+        padding: 58px 24px 56px 24px;
+        
+    }
+    
+    .catering-top, .catering-services {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .catering-top {
+        align-items: center;
+        /* padding: 58px 24px 20px 24px; */
+    }
+    
+    
+    
+    .catering-top__header {
+        padding: 24px 0 0 16px;
+        width: 219px;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24.2px;
+        text-align: left;
+        color: #FF4949;
+    }
+    
+    .catering-top__header span {
+        color: #FFFFFF;
+    }
+    
+    .catering-ad-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    
+    .catering-ad-item {
+        width: 195px;
+        height: 123px;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border-radius: 20px;
+        background-color: #3C82FF;
+        color: #FFFFFF;
+    }
+
+    .catering-ad-item:nth-child(2) {
+        margin-left: 148px;
+    }
+
+    .catering-ad-item__header {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 14.52px;
+    }
+
+    .catering-ad-item p {
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    
+    .catering-services-form {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .btn.catering-rent {
+        width: 254px;
+        height: 31px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-family: 'MorfinSans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15.4px;
+        background-color: #3C82FF;
+        color: #FFFFFF;
+        align-self: center;
+        margin-left: 6px;
+    }
+    
+    .catering-services-list {
+        
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+    }
+    
+    .catering-services-item {
+        width: 270px;
+        height: 389px;
+        
+        border-radius: 20px;
+        background-color: #ECECEC;
+        /* display: flex;
+        flex-direction: column;
+        gap: 12px; */
+    }
+    
+    .catering-services-item-text {
+        list-style: none;
+        padding-left: 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+    
+    .catering-services-item__header {
+        height: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.8px;
+        color: #3C82FF;
+    }
+    
+    .catering-services-item__subheader {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        line-height: 24.2px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+    }
+    
+    .catering-services-item__subheader-header {
+        font-weight: 600;
+        color: #FF4949;
+    }
+    
+    .catering-services-item__subheader-list {
+        font-size: 10px;
+        line-height: 12.1px;
+        font-weight: 400;
+        color: #000000;
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-left: 1.5em;
+    }
+    
+    .catering-services-item__subheader-header {
+        margin-top: 4px;
+    }
+}
+
+/* PC */
+@media (min-width : 499px), (orientation: landscape) {
+    .catering {
+        width: 1280px;
+        min-height: 1910px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        background-color: #FFFFFF;
+        border-radius: 0 0 40px 40px;
+        
+    }
+    
+    .catering-top, .catering-services {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    
+    .catering-top {
+        align-items: center;
+    }
+    
+    
+    
+    .catering-top__header {
+        padding: 96px 0 0 72px;
+        width: 638px;
+        font-family: 'Inter', sans-serif;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 67.77px;
+        text-align: left;
+        color: #FF4949;
+    }
+    
+    .catering-top__header span {
+        color: #FFFFFF;
+    }
+    
+    .catering-ad-list {
+        list-style: none;
+        padding: 0 87px 0 114px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    
+    .catering-ad-item {
+        width: 333px;
+        height: 183px;
+        padding: 28px 30px 28px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        border-radius: 20px;
+        opacity: 0px;
+        background-color: #3C82FF;
+    }
+    
+    .catering-services {
+        padding-left: 129px;
+    }
+    
+    .catering-services-form {
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+    }
+    
+    .btn.catering-rent {
+        width: 426px;
+        height: 54px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-family: 'MorfinSans', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 35.2px;
+        background-color: #3C82FF;
+        color: #FFFFFF;
+        align-self: center;
+        margin-bottom: 31px;
+    }
+    
+    .catering-services-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+    }
+    
+    .catering-services-item {
+        width: 500px;
+        height: 750px;
+        
+        border-radius: 40px;
+        background-color: #ECECEC;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    
+    }
+    
+    .catering-services-item img {
+        border-radius: 40px 40px 0 0;
+    }
+    
+    .catering-services-item-text {
+        list-style: none;
+        padding-left: 40px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .catering-services-item__header {
+        height: 35px;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 35.2px;
+        color: #3C82FF;
+    }
+    
+    .catering-services-item__subheader {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        line-height: 24.2px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+    }
+    
+    .catering-services-item__subheader-header {
+        font-weight: 600;
+        color: #FF4949;
+    }
+    
+    .catering-services-item__subheader-list {
+        font-weight: 400;
+        color: #000000;
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-left: 1.5em;
+    }
+    
+    .catering-services-item__subheader-header {
+        margin-top: 8px;
+    }
+}
+

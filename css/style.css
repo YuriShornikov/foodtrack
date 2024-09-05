@@ -1,0 +1,1243 @@
+/* подключение шрифта */
+/* @import "https://fonts.fontstorage.com/import/morfinsans.css";
+@import "https://fonts.fontstorage.com/import/inter.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('./text/MorphinSans/MorphinSansRegular.ttf');
+
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+@import url('./catering/style.css');
+@import url("./goods/style.css");
+@import url("./rent/style.css");
+@import url("./blog/style.css");
+@import url("./delivery/style.css");
+@import url("./order/style.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    padding: 0px;;
+}
+
+body {
+    font-family: 'MorfinSans', sans-serif;
+    background-color: #ECECEC;
+}
+
+.top-panel-mobile {
+    display: none;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+/* mobil */
+
+@media (max-width : 500px) and (orientation: portrait) {
+    header, main, footer, .top-panel-menu {
+        width: 390px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    header {
+        padding: 24px 26px;
+        background-color: #FFFFFF;
+        border-radius: 40px 40px 0 0;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+        
+    }
+
+    .logo {
+        width: 88px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 26.4px;
+    }
+
+    .booking-top, .foodtrack-rent {
+        width: 390px;
+        max-height: 226px;
+        background-color: #FFFFFF;
+        padding: 16px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        border-radius: 0 0 40px 40px;
+    }
+
+    .top-panel-menu {
+        width: 390px;
+        /* min-height: 226px; */
+        background-color: #FFFFFF;
+        padding: 0px 39px 16px 56px;
+        flex-direction: column;
+        border-radius: 0 0 40px 40px;
+    }
+
+    .booking-top-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .booking-top-right img {
+        width: 125px;
+        height: 125px;
+        border-radius: 20px;
+    }
+
+    .booking-top-left__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 18px;
+    }
+
+    .btn.top {
+        width: 197px;
+        height: 36px;
+        font-size: 16px;
+        line-height: 17.6px;
+    }
+
+    .btn-free {
+        width: 127px;
+        height: 36px;
+        border-radius: 25px;
+        border: 1px solid black;
+        cursor: pointer;
+        background-color: #ECECEC;
+    }
+
+    .top-panel,
+    .top-panel-menu {
+        display: none;
+    }
+
+    .top-panel-mobile {
+        /* background-image: url('../images/main/menu.svg'); */
+        display: block;
+        border-radius: 50%;
+        border: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .booking-top__header {
+        width: 197px;
+        height: 105px;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 35.2px;
+        color: #FF4949;
+    }
+
+
+
+    .top-panel-mobile-list {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        text-align: right;
+        font-size: 40px;
+        line-height: 44px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .rent-item a,
+    .top-panel-mobile-list > li > a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+
+    .booking-ad,
+    .booking-models {
+        display: flex;
+        height: 416px;
+        width: 390px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        padding: 34px 24px;
+    }
+
+    .booking-ad-right {
+        display: none;
+    }
+
+    .booking-ad-list {
+        display: flex;
+        flex-direction: row;
+        gap: 23px;
+    }
+
+    .booking-ad-left {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 26.4px;
+        color: #FF4949;
+    }
+
+    .booking-ad__advantage-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .booking-ad__advantage-item {
+        width: 270px;
+        height: 138px;
+        border-radius: 20px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: #3C82FF;
+    }
+
+    .booking-ad__advantage-item h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 19.36px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+
+    .booking-ad__advantage-item p {
+        font-size: 12px;
+        line-height: 15.6px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .booking-models {
+        padding: 34px 0px 0px 20px;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .booking-models h1 {
+        font-size: 24px;
+        line-height: 26.4px;
+        font-weight: 400;
+        color: #FF4949;
+        
+    }
+
+    .booking-models span {
+        color: #3C82FF;
+    }
+
+    .booking-models-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .booking-models-item {
+        width: 170px;
+        height: 300px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ECECEC;
+        padding: 24px 0px 18px 0px;
+        gap: 12px;
+    }
+
+    .booking-models-item img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .foodtrack-cards-item__name {
+        font-size: 20px;
+        line-height: 26.4px;
+
+    }
+
+    .foodtrack-cards-item__descript {
+        font-size: 11px;
+        line-height: 14.3px;
+        font-family: 'Inter', sans-serif;
+        list-style-position: outside;
+        margin-left: 1em;
+        list-style-type: disc;
+    }
+
+    .btn.foodtrack {
+        width: 150px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 17.6px;
+        padding: 0px;
+    }
+
+    /* booking-questions */
+    
+    .booking-questions {
+        width: 390px;
+        min-height: 416px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        padding: 34px 24px;
+        
+    }
+    
+    .booking-questions, .booking-questions-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .booking-questions {
+        padding: 34px 0px 34px 24px;
+        gap: 31px;
+    }
+    
+    .booking-questions h1 {
+        height: 26px;
+    }
+    
+    .booking-questions-list {
+        gap: 16px;
+    }
+    
+    .booking-questions-item {
+        width: 291px;
+        min-height: 52px;
+        padding: 16px 10px;
+        border: 1px solid black;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .booking-questions-item-check {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .booking-questions-item__header {
+        height: 16px;
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15.6px;
+    }
+
+    .booking-questions-item-check img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    .booking-questions-item__content {
+        display: none;
+    }
+    
+    .toggle-input {
+        display: none;
+    }
+    
+    .toggle-input:checked + label + .booking-questions-item__content {
+        display: block;
+    }
+    
+    .booking-questions-item__content, .booking-questions-item__content ul p {
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+    }
+    
+    .booking-questions-item__content ul p {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    
+    .booking-questions-item__content li {
+        list-style: inside;
+        list-style-type: decimal;
+    }
+    
+    .toggle-input:checked + .booking-questions-item-check img {
+        content: url('../images/minus.svg');
+    }
+
+    /* booking-footer */
+
+    .booking-footer {
+        height: 172px;
+        border-radius: 30px;
+        padding: 39px 27px 31px 27px;
+    }
+  
+    .footer-list {
+        height: 102px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+    }
+    
+    .footer-item {
+        width: 156px;
+        height: 100%;
+        border-radius: 20px;
+        background-color: #ECECEC;
+        padding: 12px;
+
+    }
+    
+    .footer-item ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: left;
+    }
+    
+    .footer-item__header {
+        font-size: 20px;
+        line-height: 22px;
+        color: #3C82FF;
+    }
+    
+    .footer-item__main {
+        font-size: 10px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        line-height: 12.1px;
+        margin: 0px;
+        color: #000000;
+        
+    }
+    
+    .footer-item:nth-child(2) li:nth-child(1) {
+        color: #FF4949;
+    }
+
+    /* form */
+
+    .form-container {
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .form-rent {
+        position: relative;
+        width: 256px;
+        min-height: 299px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 10px 15px 0px #00000033;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 40px 29px;
+    
+    
+    }
+    
+    .form-rent__header {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.8px;
+        color: #FF4949;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    
+    .inp-name, .inp-phone, .foodtruck-model {
+        width: 198px;
+        height: 28px;
+        border-radius: 10px;
+        border: 1px solid #131313;
+        padding: 8px 10px;
+        font-size: 10px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        line-height: 12.1px;
+    }
+    
+    .foodtruck-model {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .foodtruck-model {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url('../images/main/arrow.svg') no-repeat;
+        background-position: calc(100% - 20px) center;
+        background-size: 12px;
+    }
+    
+    .foodtruck-model, .foodtruck-model-item {
+        cursor: pointer;
+    }
+    
+    .form-rent .btn.foodtrack {
+        width: 198px;
+        height: 27px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15.4px;
+        text-align: center;
+    }
+    
+    .foodtruck-model-item {
+        height: 30px;
+    }
+    
+    .btn.foodtrack {
+        background-color: #3C82FF;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btn.foodtrack:hover, .btn.top:hover {
+        background-color: #3C82FF;
+    
+    }
+    
+    .btn.foodtrack:disabled {
+        background-color: #000000;
+        cursor: not-allowed;
+    }
+    
+    .error {
+        border-color: red;
+    }
+    
+    .btn-close {
+        margin-left: auto;
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* для чистого html */
+    
+    .error {
+        /* border: 1px solid #000000; */
+        border-color: red;
+    }
+    .popover {
+        position: absolute;
+        z-index: 1000;
+        width: 300px;
+        display: none;
+        padding: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        color: #721c24;
+    }
+    
+    .popover.name-pop {
+        top: 160px;
+    }
+    
+    .popover.phone-pop {
+        top: 206px;
+    }
+
+    .rent-list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 10px;
+        cursor: pointer;
+    
+    }
+
+    /* catering */
+    .catering-top__banner {
+        width: 342px;
+        height: 202px;
+        background-image: url('../images/catering/banner-mobile.svg');
+    }
+
+    .catering-services-item-img {
+        height: 134px;
+        border-radius: 20px 20px 0 0;
+        background-image: url("../images/catering/catering-slide_1-mobile.svg");
+        margin-bottom: 12px;
+    }
+    .catering-services-list:nth-child(2) .catering-services-item-img {
+        height: 134px;
+        border-radius: 20px 20px 0 0;
+        background-image: url("../images/catering/catering-slide_2-mobile.svg");
+        margin-bottom: 12px;
+    }
+}
+
+/* PC */
+
+@media (min-width : 499px), (orientation: landscape) {
+
+    header, main, footer {
+        width: 1280px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    header {
+        padding: 72px 80px;
+        background-color: #FFFFFF;
+        border-radius: 40px 40px 0 0;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 84px;
+        align-items: center;
+        
+    }
+    
+    .logo {
+        width: 294px;
+        height: 124px;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 61.6px;
+        color: #212121E5;
+    }
+    
+    .top-panel {
+        height: 24px;
+    }
+    
+    .top-panel-list {
+        list-style: none;
+        width: 834px;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 46px;
+    }
+    
+    .top-panel-item {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24.2px;
+        color: #000000;
+    }
+    
+    .top-panel-item a, .footer-item a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .booking-top, .foodtrack-rent {
+        width: 1280px;
+        background-color: #FFFFFF;
+        padding: 24px 72px 107px 62px;
+        display: flex;
+        flex-direction: row;
+        gap: 127px;
+        border-radius: 0 0 40px 40px;
+    }
+    
+    .booking-top-left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+    
+    .booking-top-left, .booking-top-right {
+        height: 443px;
+    }
+    
+    .booking-top__header {
+        width: 530px;
+        height: 318px;
+        font-size: 96px;
+        font-weight: 400;
+        line-height: 105.6px;
+        color: #FF4949;
+    }
+
+    .booking-top-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 127px;
+        position: relative;
+    }
+    
+    .booking-top-left__btn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 26px;
+    }
+    
+    
+    .btn-free, .btn.top {
+        width: 249px;
+        height: 53px;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        font-family: 'MorfinSans', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 35.2px;
+    }
+    
+    .btn-rent.top {
+        background-color: #3C82FF;
+        color: #FFFFFF;
+    }
+    
+    /* booking-ad */
+    
+    .booking-ad, .booking-models, .booking-questions {
+        min-height: 815px;
+    }
+    
+    .booking-ad, .booking-models, .booking-questions, .booking-footer {
+        width: 1142px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        border: none;
+    }
+    
+    .booking-ad {
+        padding: 104px 88px 117px 64px;
+    }
+    
+    .booking-ad-list {
+        display: flex;
+        flex-direction: row;
+        gap: 58px;
+    }
+    
+    .booking-ad-left {
+        width: 530px;
+        height: 594px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    
+    }
+    
+    h1 {
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 61.6px;
+        color: #FF4949;
+        width: 530px;
+    }
+    
+    .booking-ad__advantage-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .booking-ad__advantage-item {
+        width: 333px;
+        height: 183px;
+        border-radius: 20px;
+        padding: 28px 30px 28px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: #3C82FF;
+    }
+    
+    h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.05px;
+        color: #FFFFFF;
+    }
+    
+    p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.8px;
+        color: #FFFFFF;
+    }
+    
+    .booking-ad-right {
+        margin-top: 91px;
+    }
+    
+    /* booking-models */
+    
+    .booking-models {
+        padding: 104px 0px 81px 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    
+    .booking-models span {
+        color: #3C82FF;
+    }
+    
+    .booking-models-list {
+        width: 777px;
+        height: 520px;
+        display: grid;
+        grid-template-columns: repeat(3, 340px);
+        gap: 97px;
+    }
+    
+    .booking-models-item {
+        padding: 36px 0 32px 0;
+        border-radius: 40px;
+        background-color: #ECECEC;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foodtrack-cards-item__image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .foodtrack-cards-item__name {
+        margin-top: 16px;
+        width: 266px;
+        height: 44px;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 44px;
+        color: #000000;
+        text-align: center;
+    }
+    
+    .foodtrack-cards-item__descript {
+        width: 266px;
+        height: 78px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+        list-style-position: outside;
+        margin-left: 2em;
+    
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #000000;
+        
+    }
+    
+    
+    .foodtrack-cards-item__descript-item {
+        list-style-type: disc;
+    }
+    
+    
+    .btn, .btn__calendar-example {
+        height: 50px;
+        /* padding: 12px, 24px; */
+        font-family: 'MorfinSans', sans-serif;
+        border-radius: 20px;
+        border: none;
+        background-color: #3C82FF;
+        font-size: 24px;
+        line-height: 26.4px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .btn.foodtrack {
+        width: 265px;
+    }
+    
+    /* booking-questions */
+    
+    .booking-questions, .booking-questions-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .booking-questions {
+        padding: 104px 0px 81px 64px;
+        gap: 64px;
+    }
+    
+    .booking-questions h1 {
+        height: 62px;
+    }
+    
+    .booking-questions-list {
+        gap: 48px;
+    }
+    
+    .booking-questions-item {
+        width: 618px;
+        min-height: 82px;
+        padding: 24px 28px 24px 24px;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .booking-questions-item-check {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .booking-questions-item__header {
+        height: 34px;
+        font-family: 'Inter', sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 33.8px;
+    }
+    
+    .booking-questions-item__content {
+        display: none;
+    }
+    
+    .toggle-input {
+        display: none;
+    }
+    
+    .toggle-input:checked + label + .booking-questions-item__content {
+        display: block;
+    }
+    
+    .booking-questions-item__content, .booking-questions-item__content ul p {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: left;
+    }
+    
+    .booking-questions-item__content ul p {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    
+    .booking-questions-item__content li {
+        list-style: inside;
+        list-style-type: decimal;
+    }
+    
+    .toggle-input:checked + .booking-questions-item-check img {
+        content: url('../images/minus.svg');
+    }
+    
+    /* Подвал */
+    
+    .booking-footer {
+        margin-top: 84px;
+        height: 460px;
+        padding: 124px 86px;
+    }
+    
+    
+    .footer-list {
+        height: 240px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 170px;
+    }
+    
+    .footer-item {
+        width: 400px;
+        height: 100%;
+        border-radius: 20px;
+        background-color: #ECECEC;
+        padding: 40px 0 0 40px;
+    }
+    
+    .footer-item ul {
+        list-style: none;
+    }
+    
+    .footer-item__header {
+        font-size: 40px;
+        line-height: 44px;
+        color: #3C82FF;
+        margin-bottom: 12px;
+    }
+    
+    .footer-item__main {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        line-height: 29.05px;
+        margin-bottom: 24px;
+    }
+    
+    .footer-item:nth-child(2) li:nth-child(2),
+    .footer-item:nth-child(2) li:nth-child(3) {
+        margin-top: 8px;
+    }
+    
+    .footer-item:nth-child(2) li:nth-child(1) {
+        color: #FF4949;
+    }
+    
+    /* catering */
+    .catering-top__banner {
+        width: 1016px;
+        height: 599px;
+        background-image: url('../images/catering/banner.svg');
+    }
+
+    .catering-services-item-img {
+        height: 518px;
+        border-radius: 40px 40px 0 0;
+        background-image: url("../images/catering/catering-slide_1.svg");
+        background-repeat: no-repeat;
+        margin-bottom: 12px;
+    }
+    .catering-services-list:nth-child(2) .catering-services-item-img {
+        height: 518px;
+        border-radius: 40px 40px 0 0;
+        background-image: url("../images/catering/catering-slide_2.svg");
+        background-repeat: no-repeat;
+        margin-bottom: 12px;
+    }
+    
+    .form-container {
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .form-rent {
+        position: relative;
+        width: 560px;
+        min-height: 654px;
+        border-radius: 40px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 10px 15px 0px #00000033;
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        padding: 40px 52.5px 88px 52.5px;
+    
+    
+    }
+    
+    .form-rent__header {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 44px;
+        color: #FF4949;
+        text-align: center;
+    }
+    
+    .inp-name, .inp-phone, .foodtruck-model {
+        width: 455px;
+        height: 58px;
+        border-radius: 20px;
+        border: 1px solid #131313;
+        padding: 17px 20px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        line-height: 24.2px;
+        /* color: #989898; */
+    }
+    
+    .foodtruck-model {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .foodtruck-model {
+        appearance: none; /* Убирает стандартную стрелку в современных браузерах */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url('../images/arrow.svg') no-repeat;
+        background-position: calc(100% - 20px) center; /* Кастомная стрелка */
+        background-size: 24px; /* Размер кастомной стрелки */
+    }
+    
+    .foodtruck-model, .foodtruck-model-item {
+        cursor: pointer;
+    }
+    
+    .form-rent .btn.foodtrack {
+        width: 455px;
+        height: 58px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 26.4px;
+        text-align: center;
+    }
+    
+    .foodtruck-model-item {
+        height: 30px;
+    }
+    
+    .btn.foodtrack {
+        background-color: #3C82FF;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btn.foodtrack:hover, .btn.top:hover {
+        background-color: #3C82FF;
+    
+    }
+    
+    .btn.foodtrack:disabled {
+        background-color: #000000;
+        cursor: not-allowed;
+    }
+    
+    .error {
+        border-color: red;
+    }
+    
+    .btn-close {
+        margin-left: auto;
+        width: 25px;
+        height: 25px;
+    }
+    
+    /* для чистого html */
+    
+    .error {
+        /* border: 1px solid #000000; */
+        border-color: red;
+    }
+    .popover {
+        position: absolute;
+        z-index: 1000;
+        width: 300px;
+        display: none;
+        padding: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        color: #721c24;
+    }
+    
+    .popover.name-pop {
+        top: 190px;
+        left: 520px;
+    }
+    
+    .popover.phone-pop {
+        top: 286px;
+        left: 520px;
+    }
+    
+    /* .form-container {
+        display: none;
+    } */
+    
+    .rent-list {
+        width: 130px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 10px;
+        cursor: pointer;
+    
+    }
+
+    .top-panel-menu {
+        display: none;
+    }
+
+}
+
+.footer-item__main a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.rent-item {
+    /* position: absolute; */
+    display: none;
+}
+
+/* .rent-list:focus-within .rent-item, */
+.rent-list:hover .rent-item{
+    display: block;
+}

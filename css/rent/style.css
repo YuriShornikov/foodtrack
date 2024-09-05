@@ -1,0 +1,440 @@
+/* mobile */
+@media (max-width : 500px) and (orientation: portrait) {
+    .rent {
+        width: 390px;
+        /* height: 1467px; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        gap: 44px;
+        background-color: #FFFFFF;
+        padding: 58px 24px 56px 24px;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .rent.equipments {
+        flex-direction: column;
+    }
+
+    .calendar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* cards */
+    
+    .rent .cards-list.foods{
+        height: 512px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .rent .cards-list.eq {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 22px 32px;
+    }
+    
+    .cards-list {
+        width: 342px; 
+        display: grid;
+        grid-gap: 22px 32px;
+    }
+    
+    .cards-item {
+        width: 160px;
+        height: 240px;
+    }
+    
+    .cards-item {
+        padding: 24px 0 19px 0;
+        border-radius: 20px;
+        background-color: #ECECEC;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .rent .cards-item__image {
+        width: 80px;
+        height: 80px;
+        border-radius: 0px;
+    }
+
+    .rent .cards-item__image img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .rent .cards-item__name {
+        height: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.8px;
+        color: #000000;
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .rent .cards-item__descript {
+        width: 100px;
+        list-style-position: inside;
+        font-family: 'Inter', sans-serif; 
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .rent .cards-item__descript {
+        height: 30px;
+        font-size: 8px;
+        line-height: 10.4px;
+        text-align: left;
+        margin-bottom: 4px;
+    }
+    
+    .btn {
+        
+        font-family: 'MorfinSans', sans-serif;
+        border-radius: 20px;
+        border: none;
+        background-color: #3C82FF;
+        font-size: 24px;
+        line-height: 26.4px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .rent .btn.foodtrack {
+        width: 130px;
+        height: 27px;
+    }
+
+    .btn.confirm-booking {
+        width: 250px;
+        height: 27px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .cart-toggle-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+/* foodtrack rent main */
+
+@media (min-width : 499px), (orientation: landscape) {
+
+    .top-panel-menu {
+        display: none;
+    }
+
+    .rent {
+        width: 1280px;
+        /* height: 1467px; */
+        position: relative;
+        display: flex;
+        
+        gap: 44px;
+        background-color: #FFFFFF;
+        padding-left: 69px;
+        padding-bottom: 20px;
+        border-radius: 0 0 44px 44px;
+    }
+    
+    .rent.foodtracks {
+        flex-direction: row;
+    }
+    
+    .rent.equipments {
+        flex-direction: row;
+    }
+    
+    /* Календарь */
+    
+    .calendar {
+        margin-top: 64px;
+        left: 69px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .calendar-header {
+        height: 62px;
+        width: 230px;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 61.6px;
+        color: #FF4949;
+        margin-bottom: 57px;
+    }
+    
+    .calendar-main {
+        width: 327px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .calendar-period {
+        width: 100%;
+        height: 29px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .calendar-period-text, .calendar-month-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.05px;
+    }
+    
+    .calendar-period-text {
+        width: 287px;
+        height: 29px;
+        color: black;
+    }
+    
+    .calendar-period-label {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .calendar-month {
+        width: 226px;
+        height: 29px;
+        display: flex;
+        flex-direction: row;
+        gap: 78px;
+        align-items: center;
+    }
+    
+    .calendar-month-text {
+        width: 135px;
+        height: 29px;
+        margin-left: 101px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .calendar-month-text p {
+        font-weight: 500;
+        color: #686868;
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.05px;
+    }
+    
+    /* Таблица чисел */
+    
+    table {
+        margin-top: 16px;
+    }
+    
+    th, td {
+        width: 38px;
+        height: 40px;
+        background-color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        line-height: 29.05px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    td {
+        font-weight: 400;
+    }
+    
+    th {
+        font-weight: 500; 
+    }
+    
+    thead, tr {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    thead {
+        margin-bottom: 10px;
+    }
+    
+    /* Размеры под календарем */
+    
+    .foodtrack-size {
+        margin-top: 34px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        margin-bottom: 39px;
+    }
+    
+    .foodtrack-size-list__header {
+        height: 29px;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .foodtrack-size-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .foodtrack-size-item {
+        display: flex;
+        gap: 14px;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    
+    .hidden {
+        display: none;
+    }
+    
+    #options-list {
+        height: 1112px;
+        width: 752px;
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .foodtrack-size-item__criteria {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.2px;
+        color: #000000;
+    }
+    
+    .btn__calendar-example {
+        width: 329px;
+    }
+    
+    /* cards */
+    
+    .rent .cards-list.foods{
+        margin-top: 172px;
+        height: 1112px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .rent .cards-list.eq {
+        /* height: 1112px; */
+        margin-top: 172px;
+        width: 752px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cards-list {
+        width: 752px; 
+        display: grid;
+        grid-gap: 48px 72px;
+    }
+    
+    .cards-item {
+        width: 320px;
+        height: 520px;
+    }
+    
+    .cards-item {
+        padding: 36px 0 32px 0;
+        border-radius: 40px;
+        background-color: #ECECEC;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .cards-item__image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .cards-item__name {
+        width: 266px;
+        height: 44px;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 44px;
+        color: #000000;
+        text-align: center;
+    }
+    
+    .cards-item__descript {
+        width: 266px;
+        margin-top: 8px;
+        list-style-position: inside;
+        font-family: 'Inter', sans-serif; 
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .rent .cards-item__descript {
+        /* margin-bottom: 40px; */
+        height: 78px;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    .btn {
+        height: 50px;
+        font-family: 'MorfinSans', sans-serif;
+        border-radius: 20px;
+        border: none;
+        background-color: #3C82FF;
+        font-size: 24px;
+        line-height: 26.4px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .btn.foodtrack {
+        width: 265px;
+    }
+}
+
+
+.btn.confirm-booking {
+    margin-top: 40px;
+    display: none;
+}
+
+.btn.show-trucks {
+    margin-top: 40px;
+}
+
+
+

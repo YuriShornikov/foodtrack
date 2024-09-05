@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>catering</title>
+</head>
+<body>
+    <header>
+        <div class="logo">ФУДТРАКИ<br> В АРЕНДУ</div>
+        <button class="top-panel-mobile">
+            <img src="./images/main/menu.svg" alt="Menu" class="menu-icon">
+            
+        </button>
+        <nav class="top-panel">
+            <ul class="top-panel-list">
+                <li class="top-panel-item">
+                    <a href="./index.html">ГЛАВНАЯ</a>
+                </li>
+                <li class="top-panel-item">
+                    <ul class="rent-list">
+                            АРЕНДОВАТЬ
+                        <li class="rent-item">
+                            <a href="./rentEquipment.html">АРЕНДОВАТЬ ОБОРУДОВАНИЕ</a>
+                        <li class="rent-item">
+                            <a href="./rentFoodtrack.html">АРЕНДОВАТЬ ФУДТРЕК</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./catering.html">КЕЙТЕРИНГ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./goods.html">ТОВАРЫ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./blog.html">БЛОГ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./delivery.html">ДОСТАВКА</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="top-panel-menu">
+        <ul class="top-panel-mobile-list">
+            <li class="top-panel-mobile-item">
+                <a href="./index.html">ГЛАВНАЯ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <ul class="rent-list">
+                    АРЕНДОВАТЬ
+                    <li class="rent-item">
+                        <a href="./rentEquipment.html">АРЕНДОВАТЬ ОБОРУДОВАНИЕ</a>
+                    </li>
+                    <li class="rent-item">
+                        <a href="./rentFoodtrack.html">АРЕНДОВАТЬ ФУДТРЕК</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./catering.html">КЕЙТЕРИНГ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./goods.html">ТОВАРЫ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./blog.html">БЛОГ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./delivery.html">ДОСТАВКА</a>
+            </li>
+        </ul>    
+    </section>
+
+    <!-- Кнопка для сворачивания корзины -->
+    <button id="toggle-cart" class="cart-toggle-btn">🛒 <span id="cart-count">0</span></button>
+
+    <!-- Корзина -->
+    <div id="cart" class="cart collapsed">
+        <!-- Кнопка сворачивания корзины -->
+        <button id="collapse-cart" class="collapse-cart-btn">-</button>
+        <h2>Корзина</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-total">Итого: <span id="cart-total">0</span>₽</div>
+        <div class="btn-cart">
+            <button id="order-button" class="btn">Заказать</button>
+            <button class="btn clear">Очистить</button>
+        </div>  
+    </div>
+
+    <!-- Форма заказа -->
+    <div id="order-form">
+        <h2>Заказ</h2>
+        <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" required>
+            <button type="submit" class="btn">Отправить заказ</button>
+        </form>
+    </div>
+    <main>
+        <div class="catering">
+            <section class="catering-top">
+                <div class="catering-top__banner">
+                    <div class="catering-top__header">
+                        кейтеринг
+                        <span>исключительного качества</span>
+                    </div>
+                </div>
+                <ul class="catering-ad-list">
+                    <li class="catering-ad-item">
+                        <h2 class="catering-ad-item__header">Свежая еда</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet 
+                            consectetur. Metus magna quam 
+                            tellus praesent morbi porttitor vel 
+                            enim auctor.
+                        </p>
+                    </li>
+                    <li class="catering-ad-item">
+                        <h2 class="catering-ad-item__header">Разнообразие блюд</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet 
+                            consectetur. Metus magna quam 
+                            tellus praesent morbi porttitor vel 
+                            enim auctor.
+                        <p>
+                    </li>
+                    <li class="catering-ad-item">
+                        <h2 class="catering-ad-item__header">Высокий сервис</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet 
+                            consectetur. Metus magna quam 
+                            tellus praesent morbi porttitor vel 
+                            enim auctor.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="catering-services">
+                <h1>услуги</h1>
+                <div class="catering-services-form">
+                    <ul class="catering-services-list">
+                        <li class="catering-services-item">
+                            <div class="catering-services-item-img">
+                            </div>
+                            <ul class="catering-services-item-text">
+                                <div class="catering-services-item__header">
+                                    набор “хотдоги”
+                                </div>
+                                <li class="catering-services-item__subheader">
+                                    <div class="catering-services-item__subheader-header">
+                                        Хотдоги:
+                                    </div>
+                                    <ul class="catering-services-item__subheader-list">
+                                        <li class="catering-services-item__subheader-item">хотдог с сосиской классический</li>
+                                        <li class="catering-services-item__subheader-item">хотдог овощной</li>
+                                        <li class="catering-services-item__subheader-item">хотдог с фри + кетчуп</li>
+                                    </ul>
+                                    <div class="catering-services-item__subheader-header">
+                                        Напитки:
+                                    </div>
+                                    <ul class="catering-services-item__subheader-list">
+                                        <li class="catering-services-item__subheader-item">чай</li>
+                                        <li class="catering-services-item__subheader-item">кофе</li>
+                                        <li class="catering-services-item__subheader-item">лимонады</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button class="btn catering-rent">заказать</button>
+                        </li>
+                    </ul>
+                    <ul class="catering-services-list">
+                        <li class="catering-services-item">
+                            <div class="catering-services-item-img">
+                            </div>
+                            <ul class="catering-services-item-text">
+                                <div class="catering-services-item__header">
+                                    набор “хотдоги”
+                                </div>
+                                <li class="catering-services-item__subheader">
+                                    <div class="catering-services-item__subheader-header">
+                                        Хотдоги:
+                                    </div>
+                                    <ul class="catering-services-item__subheader-list">
+                                        <li class="catering-services-item__subheader-item">хотдог с сосиской классический</li>
+                                        <li class="catering-services-item__subheader-item">хотдог овощной</li>
+                                        <li class="catering-services-item__subheader-item">хотдог с фри + кетчуп</li>
+                                    </ul>
+                                    <div class="catering-services-item__subheader-header">
+                                        Напитки:
+                                    </div>
+                                    <ul class="catering-services-item__subheader-list">
+                                        <li class="catering-services-item__subheader-item">чай</li>
+                                        <li class="catering-services-item__subheader-item">кофе</li>
+                                        <li class="catering-services-item__subheader-item">лимонады</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button class="btn catering-rent">заказать</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>        
+    </main>
+    <footer class="booking-footer">
+        <ul class="footer-list">
+            <li class="footer-item">
+                <ul>
+                    <li class="footer-item__header">санкт-петербург</li>
+                    <li class="footer-item__main"> г. Санкт-Петербург, <br>пр. Бакунина д. 11</li>
+                    <li class="footer-item__main">
+                        <a href="mailto:4383588@mail.ru">4383588@mail.ru</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer-item">
+                <ul>
+                    <li class="footer-item__header">контакты</li>
+                    <li class="footer-item__main">
+                        <a href="tel:+79219060226">+7(921) 906-02-26</a>
+                    </li>
+                    <li class="footer-item__main">
+                        <a href="tel:+79119498980">+7(911) 949-89-80</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <div class="form-container">
+        <!-- <form class="form-rent" action="process_form.php" method="POST">
+            <button class="btn-close" type="button">✕</button>
+            <div class="form-rent__header">
+                заполните контактные данные
+            </div>
+            <input class="inp-name" type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+            <div class="popover name-pop"></div>
+            <input class="inp-phone" type="text" name="phone" placeholder="Телефон" autocomplete="tel" required>
+            <div class="popover phone-pop"></div>
+            <select class="foodtruck-model" name="model" required>
+                <option class="foodtruck-model-item" value="" selected disabled hidden>Модель фудтрака</option>
+                <option class="foodtruck-model-item" value="model1">Ораньжевый малыш</option>
+                <option class="foodtruck-model-item" value="model2">Длинный синий</option>
+                <option class="foodtruck-model-item" value="model3">Найт Лайтс</option>
+            </select>
+            <button class="btn foodtrack" type="submit">забронировать</button>
+        </form> -->
+    </div>
+    <!-- <div class="form-container"></div> -->
+    <script src="./index.js" defer></script>
+    <script src="./mobile.js" defer></script>
+</body>
+</html>

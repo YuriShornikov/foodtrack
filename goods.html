@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Товары</title>
+</head>
+<body>
+    <header>
+        <div class="logo">ФУДТРАКИ<br> В АРЕНДУ</div>
+        <button class="top-panel-mobile">
+            <img src="./images/main/menu.svg" alt="Menu" class="menu-icon">
+            
+        </button>
+        <nav class="top-panel">
+            <ul class="top-panel-list">
+                <li class="top-panel-item">
+                    <a href="./index.html">ГЛАВНАЯ</a>
+                </li>
+                <li class="top-panel-item">
+                    <ul class="rent-list">
+                            АРЕНДОВАТЬ
+                        <li class="rent-item">
+                            <a href="./rentEquipment.html">АРЕНДОВАТЬ ОБОРУДОВАНИЕ</a>
+                        <li class="rent-item">
+                            <a href="./rentFoodtrack.html">АРЕНДОВАТЬ ФУДТРЕК</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./catering.html">КЕЙТЕРИНГ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./goods.html">ТОВАРЫ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./blog.html">БЛОГ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./delivery.html">ДОСТАВКА</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="top-panel-menu">
+        <ul class="top-panel-mobile-list">
+            <li class="top-panel-mobile-item">
+                <a href="./index.html">ГЛАВНАЯ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <ul class="rent-list">
+                    АРЕНДОВАТЬ
+                    <li class="rent-item">
+                        <a href="./rentEquipment.html">АРЕНДОВАТЬ ОБОРУДОВАНИЕ</a>
+                    </li>
+                    <li class="rent-item">
+                        <a href="./rentFoodtrack.html">АРЕНДОВАТЬ ФУДТРЕК</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./catering.html">КЕЙТЕРИНГ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./goods.html">ТОВАРЫ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./blog.html">БЛОГ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./delivery.html">ДОСТАВКА</a>
+            </li>
+        </ul>    
+    </section>
+
+    <!-- Кнопка для сворачивания корзины -->
+    <button id="toggle-cart" class="cart-toggle-btn">🛒 <span id="cart-count">0</span></button>
+
+    <!-- Корзина -->
+    <div id="cart" class="cart collapsed">
+        <!-- Кнопка сворачивания корзины -->
+        <button id="collapse-cart" class="collapse-cart-btn">-</button>
+        <h2>Корзина</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-total">Итого: <span id="cart-total">0</span>₽</div>
+        <div class="btn-cart">
+            <button id="order-button" class="btn">Заказать</button>
+            <button class="btn clear">Очистить</button>
+        </div>  
+    </div>
+
+    <!-- Основной контент -->
+    <main>
+        <div class="goods">
+            <h1>Товары</h1>
+            <div class="goods-list-main-text">
+                Магазин продукции и оборудования для фудтраков. Все товары на нашем 
+                сайте - проверенного качества и широкого ассортимента.
+            </div>
+            <div class="goods-form">
+                <section class="goods-list"> 
+                    <ul class="cards-list">
+                        <li class="cards-item" data-name="Деревянный ящик" data-price="500">
+                            <img class="cards-item__image" src="./images/goods/box brown.svg" alt="box">
+                            <div class="cards-item__name">Деревянный ящик</div>
+                            <div class="cards-item__descript">
+                                Большой, для подарка с крышкой, хранения, декора интерьера, основа для подарка.
+                            </div>
+                            <div class="cards-item__price">500₽</div>
+                            <button class="btn goods-card">в корзину</button>
+                        </li>
+                        <li class="cards-item" data-name="Деревянный ящик" data-price="500">
+                            <img class="cards-item__image" src="./images/goods/box black.svg" alt="box">
+                            <div class="cards-item__name">Деревянный ящик</div>
+                            <div class="cards-item__descript">
+                                Малый, для подарка с крышкой, хранения, декора интерьера, основа для подарка.
+                            </div>
+                            <div class="cards-item__price">500₽</div>
+                            <button class="btn goods-card">в корзину</button>
+                        </li>
+                        <li class="cards-item" data-name="Деревянный ящик" data-price="550">
+                            <img class="cards-item__image" src="./images/goods/case black.svg" alt="box">
+                            <div class="cards-item__name">Деревянный ящик</div>
+                            <div class="cards-item__descript">
+                                Малый в стиле лофт.
+                            </div>
+                            <div class="cards-item__price">1400₽</div>
+                            <button class="btn goods-card">в корзину</button>
+                        </li>
+                        <li class="cards-item" data-name="Чипсы" data-price="1000">
+                            <img class="cards-item__image" src="./images/goods/chips.svg" alt="Snack">
+                            <div class="cards-item__name">Чипсы</div>
+                            <div class="cards-item__descript">
+                                Цитрусовые” Лайм.
+                            </div>
+                            <div class="cards-item__price">250₽</div>
+                            <button class="btn goods-card">в корзину</button>
+                        </li>
+                        <li class="cards-item" data-name="Чипсы" data-price="1000">
+                            <img class="cards-item__image" src="./images/goods/case black.svg" alt="Snack">
+                            <div class="cards-item__name">Чипсы</div>
+                            <div class="cards-item__descript">
+                                “Цитрусовые” Апельсин.
+                            </div>
+                            <div class="cards-item__price">350₽</div>
+                            <button class="btn goods-card">в корзину</button>
+                        </li>
+                        <li class="cards-item" data-name="Чипсы" data-price="1000">
+                            <img class="cards-item__image" src="./images/goods/box black.svg" alt="griddle">
+                            <div class="cards-item__name">Чипсы</div>
+                            <div class="cards-item__descript">
+                                “Цитрусовые” Красный апельсин.
+                            </div>
+                            <div class="cards-item__price">250₽</div>
+                            <button class="btn goods-card">в корзину</button>
+                        </li>
+                    </ul>
+                </section>
+                <section class="goods-products">
+                    <article class="goods-category">
+                        <div class="goods__header-group">
+                            <div class="goods__header-img"></div>
+                            <div class="goods__header">Категории товаров</div>
+                        </div>
+                        <nav class="goods-category-form">
+                            <ul class="goods-category-list">
+                                <li class="goods-category-item">
+                                    Кухонное оборудование
+                                    <a href="#microwave">Микроволновая печь Samsung - 500₽</a>
+                                    <a href="#crepe-maker">Блинница Airhot BE-1 - 1000₽</a>
+                                </li>
+                                <li class="goods-category-item">
+                                    Бойлеры
+                                    <a href="#boiler-8l">8 литровый бойлер Convito WB-8 - 500₽</a>
+                                    <a href="#boiler-12l">12 литровый бойлер Convito WB-12 - 550₽</a>
+                                </li>
+                                <li class="goods-category-item">
+                                    Грили
+                                    <a href="#grill-press">Гриль (пресс) 811Е - 1000₽</a>
+                                    <a href="#contact-grill">Гриль контактный Mars MARS - 900₽</a>
+                                </li>
+                                <li class="goods-category-item">
+                                    Миксеры
+                                    <a href="#mixer">Миксер ERGO BL-015 - 500₽</a>
+                                </li>
+                                <li class="goods-category-item">
+                                    Кофейное оборудование
+                                    <a href="#coffee-machine">Кофемашина Nuova Simonelli Appia 2Gr V - 2000₽</a>
+                                </li>
+                                <li class="goods-category-item">
+                                    Мебель и аксессуары
+                                    <a href="#chair">Стул уличный - 250₽</a>
+                                    <a href="#barrel-table">Бочка-столик - 300₽</a>
+                                </li>
+                                <li class="goods-category-item">
+                                    Техника для офиса
+                                    <a href="#cctv">Видео наблюдение - 200₽</a>
+                                    <a href="#router">Интернет - 200₽</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </article>
+                    <article class="goods-ad">
+                        <div class="goods__header-group">
+                            <div class="goods__header-img"></div>
+                            <div class="goods__header">Топ продаж</div>
+                        </div>
+                        <nav class="goods-ad-form">
+                            <ul class="goods-ad-list">
+                                <li class="goods-ad-item">
+                                    <a href="#microwave">
+                                        <img src="./images/goods/box brown.svg" alt="microwave">
+                                        <div class="goods-ad-item-info">
+                                            <div class="goods-ad-item-text">Микроволновая печь Samsung</div>
+                                            <div class="goods-ad-item-price">500₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="goods-ad-item">
+                                    <a href="#grill-press">
+                                        <img src="./images/goods/box black.svg" alt="grill">
+                                        <div class="goods-ad-item-info">
+                                            <div class="goods-ad-item-text">Гриль (пресс) 811Е</div>
+                                            <div class="goods-ad-item-price">1000₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="goods-ad-item">
+                                    <a href="#coffee-machine">
+                                        <img src="./images/goods/chips.svg" alt="coffee-machine">
+                                        <div class="goods-ad-item-info">
+                                            <div class="goods-ad-item-text">Кофемашина Nuova Simonelli Appia 2Gr V</div>
+                                            <div class="goods-ad-item-price">2000₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="booking-footer">
+        <ul class="footer-list">
+            <li class="footer-item">
+                <ul>
+                    <li class="footer-item__header">Санкт-Петербург</li>
+                    <li class="footer-item__main">г. Санкт-Петербург, <br>пр. Бакунина д. 11</li>
+                    <li class="footer-item__main">
+                        <a href="mailto:4383588@mail.ru">4383588@mail.ru</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer-item">
+                <ul>
+                    <li class="footer-item__header">Контакты</li>
+                    <li class="footer-item__main">
+                        <a href="tel:+79219060226">+7(921) 906-02-26</a>
+                    </li>
+                    <li class="footer-item__main">
+                        <a href="tel:+79119498980">+7(911) 949-89-80</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    
+    <script src="box.js"></script>
+    <script src="./mobile.js" defer></script>
+</body>
+</html>

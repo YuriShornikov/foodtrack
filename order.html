@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <!-- Подключение основного CSS-файла -->
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ФУДТРАКИ<br> В АРЕНДУ</div>
+        <nav class="top-panel">
+            <ul class="top-panel-list">
+                <li class="top-panel-item"><a href="./index.html">ГЛАВНАЯ</a></li>
+                <li class="top-panel-item">
+                    <ul class="rent-list">
+                        АРЕНДОВАТЬ
+                        <li class="rent-item">
+                            <a href="./rentEquipment.html">АРЕНДОВАТЬ ОБОРУДОВАНИЕ</a>
+                        <li class="rent-item">
+                            <a href="./rentFoodtrack.html">АРЕНДОВАТЬ ФУДТРЕК</a>
+                        </li>
+                    </ul>                   
+                </li>
+                <li class="top-panel-item"><a href="./catering.html">КЕЙТЕРИНГ</a></li>
+                <li class="top-panel-item"><a href="./goods.html">ТОВАРЫ</a></li>
+                <li class="top-panel-item"><a href="./blog.html">БЛОГ</a></li>
+                <li class="top-panel-item"><a href="./delivery.html">ДОСТАВКА</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="order-form-container">
+            <h1>Оформление заказа</h1>
+            <div class="order-form-view">
+                <div class="order-list">
+                    <h2>Список товаров:</h2>
+                    <!-- Контейнер для отображения товаров из корзины -->
+                    <div id="cart-summary" class="cart-summary"></div>
+                </div>
+    
+                <form id="checkout-form">
+                    <!-- <h2>Форма записи:</h2> -->
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" required>
+    
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" required>
+    
+                    <label for="payment-method">Удобный способ оплаты:</label>
+                    <select id="payment-method" required>
+                        <option value="cash">Наличный расчет</option>
+                        <option value="card">Безналичный расчет</option>
+                    </select>
+    
+                    <label for="address">Адрес доставки:</label>
+                    <input type="text" id="address">
+    
+                    <button type="submit">Отправить заказ</button>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="booking-footer">
+        <ul class="footer-list">
+            <li class="footer-item">
+                <ul>
+                    <li class="footer-item__header">Санкт-Петербург</li>
+                    <li class="footer-item__main">г. Санкт-Петербург, <br>пр. Бакунина д. 11</li>
+                    <li class="footer-item__main">
+                        <a href="mailto:4383588@mail.ru">4383588@mail.ru</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer-item">
+                <ul>
+                    <li class="footer-item__header">Контакты</li>
+                    <li class="footer-item__main">
+                        <a href="tel:+79219060226">+7(921) 906-02-26</a>
+                    </li>
+                    <li class="footer-item__main">
+                        <a href="tel:+79119498980">+7(911) 949-89-80</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>

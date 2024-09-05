@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>rent</title>
+</head>
+<body>
+    <header>
+        <div class="logo">ФУДТРАКИ<br> В АРЕНДУ</div>
+        <button class="top-panel-mobile">
+            <img src="./images/main/menu.svg" alt="Menu" class="menu-icon">
+            
+        </button>
+        <nav class="top-panel">
+            <ul class="top-panel-list">
+                <li class="top-panel-item">
+                    <a href="./index.html">ГЛАВНАЯ</a>
+                </li>
+                <li class="top-panel-item">
+                    <ul class="rent-list">
+                            АРЕНДОВАТЬ
+                        <li class="rent-item">
+                            <a href="./rentEquipment.html">АРЕНДОВАТЬ ОБОРУДОВАНИЕ</a>
+                        <li class="rent-item">
+                            <a href="./rentFoodtrack.html">АРЕНДОВАТЬ ФУДТРЕК</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./catering.html">КЕЙТЕРИНГ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./goods.html">ТОВАРЫ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./blog.html">БЛОГ</a>
+                </li>
+                <li class="top-panel-item">
+                    <a href="./delivery.html">ДОСТАВКА</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="top-panel-menu">
+        <ul class="top-panel-mobile-list">
+            <li class="top-panel-mobile-item">
+                <a href="./index.html">ГЛАВНАЯ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <ul class="rent-list">
+                    АРЕНДОВАТЬ
+                    <li class="rent-item">
+                        <a href="./rentEquipment.html">АРЕНДОВАТЬ ОБОРУДОВАНИЕ</a>
+                    </li>
+                    <li class="rent-item">
+                        <a href="./rentFoodtrack.html">АРЕНДОВАТЬ ФУДТРЕК</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./catering.html">КЕЙТЕРИНГ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./goods.html">ТОВАРЫ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./blog.html">БЛОГ</a>
+            </li>
+            <li class="top-panel-mobile-item">
+                <a href="./delivery.html">ДОСТАВКА</a>
+            </li>
+        </ul>    
+    </section>
+
+    <!-- корзина внизу -->
+    <button id="toggle-cart" class="cart-toggle-btn">🛒 <span id="cart-count">0</span></button>
+
+    <main>
+        <div class="rent equipments">
+            <section class="calendar">
+                <h1 class="calendar-header">АРЕНДОВАТЬ</h1>
+                <div class="calendar-rent" id="calendar-rent"></div>
+                <button class="btn show-trucks">Показать доступные Фудтреки</button>
+                <button class="btn confirm-booking">Забронировать даты</button>
+            </section>
+            <section class="cards-list eq">
+                <article class="cards-item" data-name="водонагреватель" data-id="5" data-price="1000">
+                    <img class="cards-item__image" src="./images/rent/водонагреватель.svg" alt="водонагреватель">
+                    <div class="cards-item__name">
+                        водонагреватель
+                    </div>
+                    <ul class="cards-item__descript">
+                            <li class="cards-item__descript-item">Электрический</li>
+                            <li class="cards-item__descript-item">Объем - 20 литров</li>
+                            <li class="cards-item__descript-item">360х442 см</li>
+                    </ul>
+                    <button class="btn foodtrack">забронировать</button>
+                </article>
+                <article class="cards-item" data-name="плита" data-id="6" data-price="2000">
+                    <div class="cards-item__image">
+                        <img src="./images/rent/плита.svg" alt="плита">
+                    </div>
+                    <div class="cards-item__name">
+                        плита
+                    </div>
+                    <ul class="cards-item__descript">
+                            <li class="cards-item__descript-item">Электрическая</li>
+                            <li class="cards-item__descript-item">340х450 мм</li>
+                            <li class="cards-item__descript-item">Мощность - 3,5 кВт</li>
+                    </ul>
+                    <button class="btn foodtrack">забронировать</button>
+                </article>
+                <article class="cards-item" data-name="гриль" data-id="7" data-price="2000">
+                    <div class="cards-item__image">
+                        <img src="./images/rent/гриль.svg" alt="гриль">
+                    </div>
+                    <div class="cards-item__name">
+                        гриль
+                    </div>
+                    <ul class="cards-item__descript">
+                            <li class="cards-item__descript-item">зон нагрева - 2</li>
+                            <li class="cards-item__descript-item">Раб. площадь - 350 мм</li>
+                            <li class="cards-item__descript-item">Мощность - 2100 Вт</li>
+                    </ul>
+                    <button class="btn foodtrack">забронировать</button>
+                </article>
+                <article class="cards-item" data-name="микроволновка" data-id="8" data-price="1000">
+                    <div class="cards-item__image">
+                        <img src="./images/rent/микроволновка.svg" alt="микроволновка">
+                    </div>
+                    <div class="cards-item__name">
+                        микроволновка
+                    </div>
+                    <ul class="cards-item__descript">
+                            <li class="cards-item__descript-item">Объем - 23 литра</li>
+                            <li class="cards-item__descript-item">Кол-во программ - 4</li>
+                            <li class="cards-item__descript-item">Мощность - 800 Вт</li>
+                    </ul>
+                    <button class="btn foodtrack">забронировать</button>
+                </article>
+                <article class="cards-item" data-name="фритюрница" data-id="9" data-price="500">
+                    <div class="cards-item__image">
+                        <img src="./images/rent/фритюрница.svg" alt="фритюрница">
+                    </div>
+                    <div class="cards-item__name">
+                        фритюрница
+                    </div>
+                    <ul class="cards-item__descript">
+                            <li class="cards-item__descript-item">Корзина - 150-120 мм</li>
+                            <li class="cards-item__descript-item">Мощность - 2200 Вт</li>
+                            <li class="cards-item__descript-item">Греется от 0 до 200С</li>
+                    </ul>
+                    <button class="btn foodtrack">забронировать</button>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer class="booking-footer">
+        <ul class="footer-list">
+            <li class="footer-item">
+                <ul>
+                    <li class="footer-item__header">санкт-петербург</li>
+                    <li class="footer-item__main">г. Санкт-Петербург, <br>пр. Бакунина д. 11</li>
+                    <li class="footer-item__main">
+                        <a href="mailto:4383588@mail.ru">4383588@mail.ru</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer-item">
+                <ul>
+                    <li class="footer-item__header">контакты</li>
+                    <li class="footer-item__main">
+                        <a href="tel:+79219060226">+7(921) 906-02-26</a>
+                    </li>
+                    <li class="footer-item__main">
+                        <a href="tel:+79119498980">+7(911) 949-89-80</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <div class="form-container"></div>
+    <script src="./rentFoodtrack.js" defer></script>
+    <script src="./mobile.js" defer></script>
+</body>
